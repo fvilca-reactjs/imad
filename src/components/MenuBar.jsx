@@ -27,7 +27,7 @@ export default function MenuBar() {
     setMenuActive(!menuActive)
   }
 
-  const ishome = location ==='/'
+  const ishome = location ==='/imad'
 
   const style_bg = {
     backgroundColor: ishome? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 0.6)"
