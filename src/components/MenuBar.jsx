@@ -78,7 +78,7 @@ export default function MenuBar() {
       )}
 
       <div className="links">
-        <NavLink end activeClassName="current" to="/">
+        <NavLink end activeClassName="current" to="/imad">
           Inicio
         </NavLink>
 
