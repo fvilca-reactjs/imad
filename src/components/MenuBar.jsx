@@ -27,7 +27,7 @@ export default function MenuBar() {
     setMenuActive(!menuActive)
   }
 
-  const ishome = location ==='/imad'
+  const ishome = location ==='/imad/' || location ==='/imad'
   console.log('location:', location);
 
   const style_bg = {
