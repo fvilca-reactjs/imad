@@ -1,0 +1,20 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+@media (min-width: 1060px) {
+
+    .container-about-us2 {
+        // padding: 2rem;
+
+
+        .worker-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            background-image: url('../../images/obrero.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+}

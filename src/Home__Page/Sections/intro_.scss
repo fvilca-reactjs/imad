@@ -1,0 +1,98 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+
+@media (min-width: 1060px) {
+
+    .container-intro {
+
+        .superior {
+            height: 30vh;
+        }
+
+        .inferior {
+            height: 65vh;
+
+            .titulos {
+                width: 50%;
+
+            }
+
+            .estadistica-desktop {
+                width: 50%;
+                display: flex;
+            }
+
+        }
+
+        .container-whatsapp {
+            // left: 93%;
+            bottom: 100px;
+            margin-right: 50px;
+            border-radius: 14px;
+        }
+
+        .container-iconos {
+            top: 92%;
+            margin-right: 48px;
+        }
+
+    }
+
+    .container-whatsapp {
+        .whatsapp {
+            width: calc(50px + 1vw);
+            height: calc(50px + 1vw);
+        }
+
+        .arrow-down-whatsapp {
+            // margin-left: 5px;
+            // margin-right: 5px;
+            // box-shadow: 1px 1px 5px black;
+        }
+    }
+
+    .titulos {
+        margin-left: 6rem;
+
+        .tit-pro {
+            font-size: 85px;
+            // margin-bottom: -20px;
+        }
+
+        .tit-ing {
+            font-size: 85px;
+            // margin-bottom: -20px;
+        }
+
+        .tit-inn {
+            font-size: 85px;
+        }
+
+        .par {
+            width: 50vw;
+
+            .mensaje0 {
+
+                width: 70%;
+                padding-top: 2rem;
+
+                div {
+                    font-size: 30px;
+                    width: 100%;
+                    padding-bottom: 2.5rem;
+
+                    span {
+                        font-size: 30px;
+                    }
+                }
+
+            }
+
+            .estadistica-movil {
+                display: none;
+            }
+        }
+
+    }
+
+}

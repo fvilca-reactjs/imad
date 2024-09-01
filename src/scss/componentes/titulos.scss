@@ -1,0 +1,57 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+
+
+.titulos-pages-sec {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+
+    .tit-pro {
+        @include raleway-regular;
+        font-size: 35px;
+        white-space: nowrap;
+        margin-bottom: -10px;
+    }
+
+    .tit-man {
+        @include raleway-black;
+        font-size: 35px;
+        white-space: nowrap;
+        margin-bottom: -10px;
+        color: $color_rojo;
+    }
+
+    .tit-inn {
+        @include raleway-regular;
+        font-size: 35px;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+    }
+
+    .mensaje-man {
+        padding-top: 0rem;
+        width: 100%;
+        display: flex;
+
+        div {
+            width: 100%;
+            @include raleway-regular;
+            font-size: 20px;
+            color: white;
+            white-space: wrap;
+            align-self: flex-start;
+            // margin-bottom: 1rem;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}

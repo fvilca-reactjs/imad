@@ -1,0 +1,70 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+.container-counter {
+    position: relative;
+}
+
+.container-number {
+
+    display: flex;
+    
+    div {
+        background-color: $color_rojo;
+        @include josefin-sans-bold;
+        font-size:30px;
+        margin-right: 5px;
+        padding: 3px;
+        width: 40px;
+        height: 40px;
+    }
+    span {
+        font-size: 14px;
+        color: $color_rojo;
+        @include josefin-sans-bold;
+        white-space: nowrap;
+    }
+}
+
+.vertical {
+    margin-top: 5px;
+    margin-left: 1rem;
+    height: 30px;
+    border-left: 1px solid $color_rojo;
+}
+
+.container-name {
+    @include raleway-light;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 0.5rem;
+    writing-mode: vertical-rl;
+    letter-spacing: 5px;
+    height: 100px;
+    color: $color_rojo;
+    font-weight: 600;
+
+}
+
+
+@media (min-width: 1060px) {
+    .container-number {
+        div{
+            width: 70px;
+            height: 70px;
+            font-size: 60px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+    .vertical{
+        margin-left: 1.7rem;
+        margin-top: 1rem;
+    }
+    .container-name{
+        font-size: 12px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}

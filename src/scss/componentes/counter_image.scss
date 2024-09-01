@@ -1,0 +1,41 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+.container-counter--image {
+    position: relative;
+
+    .container-number--image {
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $color_rojo;
+            @include josefin-sans-bold;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+        }
+    }
+
+}
+
+
+
+
+
+@media (min-width: 1060px) {
+
+    .container-counter--image {
+
+        .container-number--image {
+            div {
+                width: 50px;
+                height: 50px;
+                font-size: 40px;
+            }
+        }
+
+    }
+}

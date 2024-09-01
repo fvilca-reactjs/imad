@@ -1,0 +1,16 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+
+.container-about-us2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // height: 100%;
+    background-color: #313030;
+    // padding: 1rem 0;
+
+    .worker-image{
+        display: none;
+    }
+}

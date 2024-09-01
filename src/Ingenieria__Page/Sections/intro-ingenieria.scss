@@ -1,0 +1,24 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+
+.container-intro--ingenieria {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 46vh;
+
+
+    .superior {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .inferior {
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+    }
+
+}

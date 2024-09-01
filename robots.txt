@@ -1,0 +1,3 @@
+User-agent: Googlebot-Image
+Disallow: /src/images/ingeniero.jpg
+Disallow: /src/images/soldador_COLOR.webp

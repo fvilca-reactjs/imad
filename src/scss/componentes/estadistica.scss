@@ -1,0 +1,68 @@
+@import "../typography.scss";
+@import "../base/variables.scss";
+
+.container-datos {
+    border: 6px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    //*!
+    min-height: 70%;
+    max-height: 80%;
+    // width: calc(100% + 2vw);
+     width: 90%;
+    //*!
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+
+    .container-proyectos {
+        // margin-bottom: 0.5rem;
+        padding: 0 1rem;
+        p {
+            font-size: calc(100% + 2vw);
+            @include josefin-sans-bold;
+            // opacity: 0.8;
+            text-align: center;
+        }
+
+        div {
+            font-size: 16px;
+            text-align: center;
+            @include raleway-bold;
+            margin-top: -5px;
+            white-space: wrap;
+        }
+    }
+
+    .mensaje {
+        @include raleway-regular;
+        font-size: 16px;
+        white-space: wrap;
+        text-align: right;
+        width: 90%;
+        .mineria {
+            font-size: 16px;
+            border-bottom: 2px solid $color_rojo;
+        }
+
+        .industria {
+            @include raleway-regular;
+            border-bottom: 2px solid $color_naranja;
+            font-size: 16px;
+        }
+    }
+
+    .link-about {
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        @include raleway-light;
+        font-size: 16px;
+        border-bottom: 1px dashed white;
+        display: inline;
+        align-self: center;
+    }
+}

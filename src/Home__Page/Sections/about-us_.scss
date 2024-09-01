@@ -1,0 +1,78 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+@media (min-width: 1060px) {
+
+  .container-about-us {
+    height: 90vh;
+    flex-direction: row;
+
+    .ingeniero {
+      width: 50vw;
+      height: 50%;
+
+      div {
+        width: 50%;
+        background-size: cover;
+        background-position: 10% top;
+      }
+    }
+
+    .historia {
+      width: 50%;
+    }
+  }
+
+
+  .historia {
+    margin-left: 1rem;
+
+    :nth-child(1) {
+      @include raleway-regular;
+      color: black;
+      font-size: 20px;
+      white-space: nowrap;
+      border-bottom: 4px solid $color_rojo;
+      align-self: start;
+    }
+
+    :nth-child(2) {
+      color: black;
+      @include raleway-regular;
+      font-size: 70px;
+      white-space: nowrap;
+    }
+
+    :nth-child(3) {
+      @include raleway-black;
+      font-size: 70px;
+      white-space: nowrap;
+      color: black;
+    }
+
+    :nth-child(4) {
+      color: black;
+      @include raleway-regular;
+      font-size: 70px;
+      white-space: nowrap;
+    }
+
+    :nth-child(5) {
+      color: gray;
+      width: 80%;
+      margin: 20px 0;
+      @include raleway-regular;
+      font-size: 30px;
+    }
+  }
+
+  .cuadro {
+    border: 6rem solid rgba($color: #000000, $alpha: 0.1);
+    width: 450px;
+    height: 450px;
+    // z-index: -1;
+    // left: 0;
+    // bottom: 0;
+  }
+
+}

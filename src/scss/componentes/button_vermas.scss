@@ -1,0 +1,45 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+.button-vermas {
+
+  letter-spacing: 5px;
+  // padding: 10px 20px;
+  color: $color_rojo;
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-self: center;
+  // z-index: 100;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  align-self:auto;
+  white-space: nowrap;
+  
+}
+
+.button-vermas:hover {
+ color: gray;
+}
+
+.button-vermas:active {
+  position: relative;
+  top: 1px;
+}
+
+@media (min-width: 1060px) {
+  
+  .button-vermas {
+    font-size: 10px;
+  }
+}

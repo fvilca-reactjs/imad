@@ -1,0 +1,41 @@
+@import "./scss/base/variables.scss";
+// @import "./Home__Page/home_page.scss";
+// @import "SettingPage/setting.scss";
+
+//################# [ mobile ] #########################
+#main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home-page {
+  
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+
+.manufactura-page{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ingenieria-page{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.productos-page{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

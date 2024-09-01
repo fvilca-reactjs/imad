@@ -1,0 +1,37 @@
+@import "../scss/base/variables.scss";
+@import "../scss/typography.scss";
+@import "../App.scss";
+@import "../App_.scss";
+
+
+
+.bg-manufactura {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  z-index: -1;
+}
+
+
+.bg3-manufactura {
+  background-image: url("../images/manufactura_1999x1120.webp");
+  background-position: 50% 100%;
+  
+}
+
+#manufactura--intro{
+}
+
+
+#manufactura--list {
+  width: 100vw;
+  // height: 800px;
+  background-color: #F5F5F5;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

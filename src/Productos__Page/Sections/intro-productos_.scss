@@ -1,0 +1,22 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+// @import '../../scss/componentes/titulos_.scss';
+
+@media (min-width: 1060px) {
+
+    .container-intro--productos {
+        height: 60vh;
+        .superior {
+            height: 30%;
+        }
+
+        .inferior {
+            height: 50%;
+            align-items: center;
+            padding-left: 6rem;
+        }
+
+
+
+    }
+}

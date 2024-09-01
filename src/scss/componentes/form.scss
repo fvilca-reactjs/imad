@@ -1,0 +1,125 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     gap: 2rem;
+    padding:  2rem 1rem;
+    width: 100%;
+    height: 100%;
+
+    .title-form {
+        color: black;
+        @include raleway-black;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 500px;
+        position: relative;
+
+        :hover {
+            cursor: pointer;
+        }
+
+        span {
+            color: black;
+            @include raleway-bold;
+            font-size: 18px;
+            box-sizing: border-box;
+            padding-inline: 0.5em;
+            padding-block: 0.7em;
+            border-bottom: 1px solid gray;
+            white-space: nowrap;
+        }
+
+        .input {
+            color: gray;
+            @include raleway-regular;
+            font-size: 18px;
+            background-color: transparent;
+            width: 100%;
+            box-sizing: border-box;
+            padding-inline: 0.5em;
+            padding-block: 0.7em;
+            border: none;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+        }
+
+        .input-border {
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s;
+            border-bottom: 2px solid black;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        /* here is code of animated border */
+        input:focus~.input-border {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        textarea:focus~.input-border {
+            width: 100%;
+        }
+
+        .mensaje-textarea {
+            resize: vertical;
+            color: gray;
+            @include raleway-regular;
+            font-size: 18px;
+            background-color: transparent;
+            width: 100%;
+            box-sizing: border-box;
+            padding-inline: 0.5em;
+            padding-block: 0.7em;
+            // border: none;
+            outline: none;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+
+}
+
+
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+::-moz-placeholder {
+    color: black;
+}
+
+::-ms-placeholder {
+    color: black;
+}
+
+::placeholder {
+    color: black;
+    font-size: 18px;
+    @include raleway-bold;
+}
+
+
+
+@media (min-width: 1060px) {
+    .form{
+        width: 70%;
+        padding:  2rem;
+    }
+}

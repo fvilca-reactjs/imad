@@ -1,0 +1,71 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+
+.container-contacto {
+    margin-top: 11%;
+    width: 100vw;
+    // height: 100vh;
+    background-image: url('../../images/mapa3.webp');
+    // background-size: cover;
+    background-position: 797% -1020%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // overflow: hidden;
+
+    .counter-contacto {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        align-self: end; // left: 75%;
+        margin-right: 17px;
+    }
+
+    .mensaje-contacto {
+        margin-left: 2rem;
+        width: 100%;
+        padding: 3rem 0;
+        align-self: center;
+        // border: 1px dashed white;
+
+        :nth-child(1) {
+            margin-top: 20px;
+            color: white;
+            @include raleway-regular;
+            font-size: calc(30px + 1vw);
+            white-space: nowrap;
+        }
+
+        :nth-child(2) {
+            @include raleway-black;
+            font-size: calc(30px + 1vw);
+            white-space: nowrap;
+            color: white;
+            padding-bottom: 1rem;
+        }
+
+        .contacto-group {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+
+            img {
+                margin: 0 10px 0 0;
+            }
+
+            div {
+                @include raleway-light;
+                font-size: calc(12px + 0.5vw);
+                white-space: wrap;
+                width: 80%;
+            }
+        }
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+    }
+}

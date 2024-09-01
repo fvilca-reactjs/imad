@@ -1,0 +1,121 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+
+.container-tecnologia {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .terrain {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        
+        background-repeat: no-repeat;
+        background-image: url('../../images/grid.png');
+        background-position: 50% 100%;
+        transform: scaleX(120%);
+        background-size: contain;
+        z-index: -1;
+    }
+
+    .scanner2 {
+        position: absolute;
+        
+        width: 100%;
+        height: 25%;
+        bottom: 4%;
+        background-image: url('../../images/scanner3_.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: -5% 80%;
+    }
+    .scanner3 {
+        position: absolute;
+        bottom: 9%;
+        width: 100%;
+        height: 15%;
+        background-image: url('../../images/scanner_5.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+    }
+    .counter-tecnologia{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        align-self: end; // left: 75%;
+        margin-right: 17px;
+    }
+}
+
+
+.scanner {
+    // border: 2px dashed red;
+    width: 100vw;
+    height: 30vh;
+    // overflow: hidden;
+    display: flex;
+    justify-content: end;
+    div {
+        margin-right: -5%;
+        width: 50%;
+        height: 150%;
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-position: 40% top;
+        background-image: url('../../images/scanner_.png');
+        background-size: cover;
+        align-self: end;
+    }
+}
+
+
+.tecnologia-mensaje {
+
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    // margin-bottom: -50px;
+    :nth-child(1) {
+        color: black;
+        @include raleway-regular;
+        font-size: calc(25px + 1vw);
+        white-space: nowrap;
+    }
+
+    :nth-child(2) {
+        color: black;
+        @include raleway-black;
+        font-size: calc(25px + 1vw);
+        white-space: nowrap;
+    }
+
+    :nth-child(3) {
+        @include raleway-regular;
+        font-size: calc(25px + 1vw);
+        white-space: nowrap;
+        color: black;
+    }
+
+    :nth-child(4) {
+        border-bottom: 4px solid $color_celeste;
+        width: 20%;
+    }
+
+    :nth-child(5) {
+        color: gray;
+        margin: 20px 0;
+        @include raleway-regular;
+        font-size: 20px;
+        width: 40%;
+    }
+}

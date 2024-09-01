@@ -1,0 +1,111 @@
+$color1: #fff;
+$color2: #fff;
+// $color_rojo: #F02C4C;
+$color_azul: #243447;
+$color_rojo: #FF0048;
+$color_celeste: rgb(0, 195, 255);
+$color_naranja: rgb(255, 123, 0);
+$color_gray: gray;
+
+$color3: #d0d7bf;
+$color-bg: #d0d7bf;
+// $menu-bar-width: 100vw;
+
+// @font-face {
+//   font-family: "Segoe WP";
+//   font-style: normal;
+//   font-weight: normal;
+//   //src: local("Segoe WP"), url("SegoeWP.woff") format("woff");
+//   src: url("SegoeWP.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "Segoe WP bold";
+//   font-style: normal;
+//   font-weight: normal;
+//   //src: local("Segoe WP"), url("SegoeWP.woff") format("woff");
+//   src: url("SegoeWP-Bold.woff") format("woff");
+// }
+$font_paragraph: "Raleway";
+$label_card: "Segoe WP bold";
+$label_menu_icon: "Segoe WP bold";
+
+// /** TEXT ****/
+
+// .label-card,
+// .mini-icon--label {
+//   font-size: 0.7rem;
+//   font-weight: bold;
+//   font-family: $label_card;
+//   color: $color2;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   margin: 0 0.4rem 10px 10px;
+// }
+
+$txt-filter: 1.111rem;
+// //! solo tiene sentido aquello q se va a reutilizar mucho por ejemplo parrafos, titulos
+
+// .text--tag {
+//   font-family: $font_paragraph;
+//   font-size: 18px;
+//   color: $color3;
+// }
+// .filter--title--light {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 21px;
+//   color: $color2;
+// }
+// .filter--title--dark,
+// .slider-icon-label {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 18px;
+//   color: $color1;
+// }
+
+// .filter-text {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 25px;
+//   color: $color2;
+// }
+
+// .filter-text--dark {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 25px;
+//   color: $color1;
+// }
+
+// .slider-label {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 20px;
+//   color: $color1;
+//   white-space: nowrap;
+// }
+// .list--temp--text {
+//   font-family: $label_card;
+//   font-weight: bold;
+//   font-size: 39px;
+//   color: $color1;
+// }
+
+// /** SHAPES ****/
+
+// .arrow-up {
+//   width: 0;
+//   height: 0;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-bottom: 5px solid #1aff00;
+// }
+// .arrow-down {
+//   width: 0;
+//   height: 0;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-top: 5px solid red;
+// }

@@ -1,0 +1,16 @@
+@import "../scss/base/variables.scss";
+@import "../scss/typography.scss";
+@import "../App.scss";
+@import "../App_.scss";
+
+
+@media (min-width: 1060px) {
+
+  .bg-productos {
+    height: 90vh;
+    background-size: cover;
+    background-position: center 150%;
+    // background-size: 100% 100% ;
+
+  }
+}

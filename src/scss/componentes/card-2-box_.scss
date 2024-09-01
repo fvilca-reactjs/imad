@@ -1,0 +1,59 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+//////////////////////////////////////////////////////////
+
+@media (min-width: 1060px) {
+
+    .card2col--container {
+        flex-direction: row;
+        padding: 1rem;
+        width: 70vw;
+
+        .card2col--box1 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+
+            .card2col--image {
+                width: 500px;
+                height: 300px;
+
+                img {
+                    width: 500px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+
+                img:hover {
+                    filter: saturate(100%) brightness(158%);
+                }
+
+
+            }
+
+        }
+
+        .card2col--box2 {
+            width: 50%;
+            padding: 1rem 1rem 0rem 6rem;
+
+            .card2col--title {
+                font-size: 30px;
+            }
+
+            .card2col--text {
+                font-size: 22px;
+                line-height: normal;
+            }
+
+
+        }
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+}

@@ -1,0 +1,30 @@
+@import "../../scss/base/variables.scss";
+@import "../../scss/typography.scss";
+
+@media (min-width: 1060px) {
+
+  .container-footer {
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+
+
+    .logo-resumen {
+      width: 50%;
+
+      .resumen-footer {}
+    }
+
+    .links-footer {
+      width: 25%;
+
+      ul{
+        flex-direction: column;
+      }
+    }
+
+    .horario-footer {
+      width: 25%;
+    }
+  }
+}
