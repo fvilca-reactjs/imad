@@ -27,11 +27,11 @@ export default function MenuBar() {
     setMenuActive(!menuActive)
   }
 
-  const ishome = (location ==='/imad/' || location ==='/imad')
+  const ishome = (location === '/imad/' || location === '/imad')
   console.log('location:', location);
 
   const style_bg = {
-    backgroundColor: ishome? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 0.6)"
+    backgroundColor: ishome ? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 0.6)"
   }
   ////////////////////////////////////////////////
   return (
@@ -79,19 +79,21 @@ export default function MenuBar() {
       )}
 
       <div className="links">
-        <NavLink end activeClassName="current" to="/imad">
+        <NavLink className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        } to="/imad">
           Inicio
         </NavLink>
 
-        <NavLink end className="current" to="/manufactura">
+        <NavLink to="/manufactura">
           Manufactura
         </NavLink>
 
-        <NavLink end className="current" to="/ingenieria">
+        <NavLink to="/ingenieria">
           Ingenieria
         </NavLink>
 
-        <NavLink end activeClassName="current" to="/productos">
+        <NavLink to="/productos">
           Productos
         </NavLink>
       </div>
