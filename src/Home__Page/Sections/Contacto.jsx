@@ -12,6 +12,8 @@ const link_google_maps = 'https://maps.app.goo.gl/U3dJ4zypykxqBQFD6'
 
 export default function Contacto() {
 
+    const click = (second) => { window.open(link_google_maps) }
+
     ////////////////////////////////////////////////
     return (
         <div className="container-contacto">
@@ -39,19 +41,15 @@ export default function Contacto() {
                     <img src={Arroba} alt='icon' />
                     <div>ingenieria@imad3d.com.pe</div>
                 </div>
-
-                {/* <NavLink end to={link_google_maps} >
-                    <Button button_title={'ABRIR GOOGLE MAPS'} />
-                </NavLink> */}
-
-                <Button button_title={'ABRIR GOOGLE MAPS'} />
+                
+                <Button button_title={'ABRIR GOOGLE MAPS'} click={click} />
 
             </div>
 
             <div className="form-container">
                 <Form />
             </div>
-
+            
 
         </div>
     );
