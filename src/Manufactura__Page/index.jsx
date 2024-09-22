@@ -7,6 +7,7 @@ import IntroManufactura from "./Sections/IntroManufactura";
 import Card2Box from "../components/Card2Box";
 import imagen1 from '../images/estructuras_metalicas3.jpg'
 import imagen2 from '../images/pintado.jpeg'
+import imagen3 from '../images/mecanizado.jpeg'
 import Card2BoxReverse from "../components/Card2BoxReverse";
 
 
@@ -49,7 +50,7 @@ function ManufacturaPage() {
           • Control de calidad y espesor adecuado.
         </Card2BoxReverse>
 
-        <Card2Box image={imagen1} title={'MECANIZADO DE PIEZAS'} number='3'>
+        <Card2Box image={imagen3} title={'MECANIZADO DE PIEZAS'} number='3'>
           Contamos con amplia experiencia en el desarrollo de proyectos y fabricaciones empleando procesos de fabricación correctos, óptimos y seguros, así como estándares de calidad.
         </Card2Box>
 

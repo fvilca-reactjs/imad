@@ -1,13 +1,12 @@
-import "./productos_page.scss";
+   import "./productos_page.scss";
 import "./productos_page__.scss";
-import { useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import IntroProductos from "./Sections/IntroProductos";
-import Card2Box from "../components/Card2Box";
-import imagen1 from '../images/estructuras_metalicas3.jpg'
-import Card2BoxReverse from "../components/Card2BoxReverse";
-
+import ListadoProductos from "./Sections/ListadoProductos";
+import DetalleProductos from "./Sections/DetalleProductos.jsx";
+import DetalleProductos2 from "./Sections/DetalleProductos2.jsx";
 
 const scrollTo_ = (hash) => {
   if (hash === "") {
@@ -22,6 +21,7 @@ const scrollTo_ = (hash) => {
 };
 
 function ProductosPage() {
+
   const { pathname, hash } = useLocation();
   useEffect(() => {
     scrollTo_(hash);
@@ -33,12 +33,32 @@ function ProductosPage() {
       <div className="bg-productos bg3-productos" >
       </div>
 
+
       <section id="productos--intro">
         <IntroProductos />
       </section>
 
       <section id="productos--list">
+        <Routes>
+          <Route path="izaje" element={<ListadoProductos title = "IZAJE DE CARGA"   route='izaje'/>} />
+          <Route path="concavos" element={<ListadoProductos title = "FACILIDADES PARA CAMBIO DE CONCAVOS"  route='concavos' />} />
+          <Route path="plataformas" element={<ListadoProductos title = "PLATAFORMAS DE ACCESO"   route='plataformas'/>} />
+          <Route path="fajas" element={<ListadoProductos title = "FAJAS TRANSPORTADORAS" route='fajas'/>} />
+          <Route path="grating" element={<ListadoProductos title = "GRATING"   route = 'grating'/>} />
 
+          <Route path="izaje/:id" element={<DetalleProductos category='izaje'/>} />
+          <Route path="concavos/:id" element={<DetalleProductos category='concavos'/>} />
+          <Route path="plataformas/:id" element={<DetalleProductos category='plataformas'/>} />
+          <Route path="fajas/:id" element={<DetalleProductos category='fajas'/>} />
+          <Route path="grating/:id" element={<DetalleProductos category='grating'/>} />
+
+          <Route path="izaje/:id/:id2" element={<DetalleProductos2 category='izaje'/>} />
+          <Route path="concavos/:id/:id2" element={<DetalleProductos2 category='concavos'/>} />
+          <Route path="plataformas/:id/:id2" element={<DetalleProductos2 category='plataformas'/>} />
+          <Route path="fajas/:id/:id2" element={<DetalleProductos2 category='fajas'/>} />
+          <Route path="grating/:id/:id2" element={<DetalleProductos2 category='grating'/>} />
+    
+        </Routes>
       </section>
 
       <section id="section--footer">

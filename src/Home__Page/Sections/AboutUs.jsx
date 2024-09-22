@@ -2,6 +2,7 @@ import React from "react";
 import "./about-us.scss";
 import "./about-us_.scss";
 import ButtonVerMas from "../../components/ButtonVerMas";
+import CounterSection from "../../components/CounterSection";
 
 export default function AboutUs() {
 
@@ -21,6 +22,11 @@ export default function AboutUs() {
                 <p>Somos una empresa especializada en desarrollar proyectos de ingeniería altamente innovadores, satisfaciendo las necesidades de nuestros clientes y cumpliendo con las exigencias de diseño empleando las normas internacionales que nos avalan.
                 </p>
             </div>
+
+            <div className="container-iconos">
+                <CounterSection number='1' name='SOBRE NOSOTROS' />
+            </div>
+
         </div>
     );
 }

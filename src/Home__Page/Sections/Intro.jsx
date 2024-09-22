@@ -1,12 +1,13 @@
 import React from "react";
 import "./intro.scss";
 import "./intro_.scss";
-import CounterSection from "../../components/CounterSection";
 import Button from "../../components/Button";
-import Whatsapp from '../../images/whatsapp.png'
-import ArrowDown from '../../images/arrow-down.svg'
+import Whatsapp from '../../images/whatsapp_2.png'
+import Email from '../../images/message.png'
+import Call from '../../images/call.png'
 import Estadistica from "../../components/Estadistica";
 import { useInView, animated as a } from "@react-spring/web";
+import { NavLink } from "react-router-dom";
 
 export default function Intro() {
 
@@ -22,14 +23,14 @@ export default function Intro() {
                 <div className="container-gif"></div>
 
                 <div className="titulos">
-                    <div  className='wrapper' ref={ref1}>
+                    <div className='wrapper' ref={ref1}>
                         <a.p className="tit-pro" style={{ transform: ist1InView ? 'translateY(0%)' : 'translateY(100%)', transition: "all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000)" }}>Proyectos de</a.p>
                     </div>
 
-                    <div  className='wrapper' ref={ref2}>
-                        <a.p className="tit-ing" style={{ transform: ist2InView ? 'translateY(0%)' : 'translateY(100%)', transition: "all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000)"   }}>Ingenieria</a.p>
+                    <div className='wrapper' ref={ref2}>
+                        <a.p className="tit-ing" style={{ transform: ist2InView ? 'translateY(0%)' : 'translateY(100%)', transition: "all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000)" }}>Ingenieria</a.p>
                     </div>
-                    <div  className='wrapper' ref={ref3}>
+                    <div className='wrapper' ref={ref3}>
                         <a.p className="tit-inn" style={{ transform: ist3InView ? 'translateY(0%)' : 'translateY(100%)', transition: "all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000)" }}>Innovadores</a.p>
                     </div>
 
@@ -41,8 +42,9 @@ export default function Intro() {
                                 Nuestros diseños están orientados a solucionar problemas de forma <span>segura</span>, <span>eficiente</span> y <span> rápida</span>.
                             </div>
 
-                            <Button button_title='VER PRODUCTOS' />
-
+                            <NavLink to="/productos">
+                                <Button button_title='VER PRODUCTOS' />
+                            </NavLink>
                         </div>
                         <div className="estadistica-movil">
                             <Estadistica />
@@ -59,16 +61,26 @@ export default function Intro() {
             </div>
 
             <div className="container-whatsapp">
-                <a href='https://wa.link/u8hh8w'
-                    className="whatsapp">
+                <a href='https://wa.link/g3st2l'>
                     <img src={Whatsapp} alt="whatsapp" />
+                    <span className="whatsapp">Ingenieria</span>
                 </a>
-                <img src={ArrowDown} alt="whatsapp" className="arrow-down-whatsapp" />
+                <a href='https://wa.link/gl2xws'>
+                    <img src={Whatsapp} alt="whatsapp" />
+                    <span className="whatsapp">Gerencia</span>
+                </a>
 
-            </div>
 
-            <div className="container-iconos">
-                <CounterSection number='1' name='SOBRE NOSOTROS' />
+                {/* <a href='#section--contacto' >
+                    <img src={Email} alt="email" />
+                    <span className="email" >Cotizaciones</span>
+                </a> */}
+                <a href="#section--contacto">
+                    <img src={Call} alt="visit" />
+                    <span className="visit">Contacto</span>
+                </a>
+
+
             </div>
 
 

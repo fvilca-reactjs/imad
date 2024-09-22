@@ -19,6 +19,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin raleway-medium {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 @mixin raleway-bold {
   font-family: "Raleway", sans-serif;

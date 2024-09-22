@@ -14,7 +14,7 @@
         width: 100vw;
         height: 40vh;
         overflow: hidden;
-
+        z-index: 1;
         display: flex;
         justify-content: center;
 
@@ -33,6 +33,14 @@
         display: flex;
         flex-direction: column;
     }
+
+    .container-iconos {
+        position: absolute;
+        top: 0%;
+        right: 0;
+        margin-right: 17px;
+        z-index: 1;
+    }
 }
 
 .cuadro {
@@ -40,7 +48,7 @@
     border: 2rem solid rgba($color: #000000, $alpha: 0.05);
     width: 200px;
     height: 200px;
-    z-index: -1;
+    z-index: 0;
     left: 0;
     bottom: 0;
 }

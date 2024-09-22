@@ -47,7 +47,7 @@ export default function Contacto() {
             </div>
 
             <div className="form-container">
-                <Form />
+                <Form title='Haznos saber como podemos ayudarte' />
             </div>
             
 
