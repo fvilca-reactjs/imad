@@ -5,15 +5,29 @@
 @media (min-width: 1060px) {
 
     .container-intro--productos {
-        height: 60vh;
+        height: 50vh;
         .superior {
             height: 30%;
         }
 
         .inferior {
-            height: 50%;
-            align-items: center;
-            padding-left: 6rem;
+            height: 70%;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .productos-tit{
+                .tit-catalogo {
+                    font-size: 70px;
+                }
+    
+                .tit-productos {
+                    font-size: 70px;
+                }
+            }
+            .container-card--productos{
+                gap: 2rem;
+                // margin-top: 10rem;
+            }
         }
 
 

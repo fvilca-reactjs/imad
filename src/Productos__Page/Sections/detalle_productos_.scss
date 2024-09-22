@@ -1,0 +1,28 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+
+@media (min-width: 1060px) {
+
+    .detalle-container {
+        width: 100vw;
+        flex-direction: row;
+        .box1{
+            width: 100%;
+            flex-direction: row;
+        }
+        .box{
+            width: 10%;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            img{
+                width: 100%;
+            }
+            
+        }
+        .box2{
+            width: 100%;
+        }
+
+    }
+}

@@ -65,8 +65,7 @@
         padding: 1rem 0.5rem;
         gap: 1rem;
         .card2col--title{
-            // padding: 1rem 2rem 1rem 0.5rem;
-            color: #484848;
+            color: $color_azul;
             @include jost-regular;
             font-size: 20px;
             margin-bottom: -10px;

@@ -1,5 +1,4 @@
 import React from 'react'
-import ButtonVerMas from './ButtonVerMas'
 import '../scss/componentes/card-2-box.scss'
 import '../scss/componentes/card-2-box_.scss'
 import CounterImage from './CounterImage'
@@ -14,7 +13,7 @@ export default function Card2BoxReverse({ image, title, children, number }) {
 
             <div className="card2col--box1">
 
-                <a.div className="card2col--image" ref={ref} style={{ opacity: isInView ? 1 : 0,filter: isInView ? 'saturate(100%) brightness(158%)' : 'saturate(0%) brightness(190%)', transition: "1s ease-in-out" }}>
+                <a.div className="card2col--image" ref={ref} style={{ opacity: isInView ? 1 : 0,filter: isInView ? 'saturate(70%) brightness(120%)' : 'saturate(0%) brightness(190%)', transition: "1s ease-in-out" }}>
                     {/* <img src={image} alt='card' width={300} height={300}/> */}
                     <img src={image} alt='card' />
                     <div className="card2col-counter--image">
@@ -33,9 +32,9 @@ export default function Card2BoxReverse({ image, title, children, number }) {
                 <div className="card2col--space"></div>
                 <div className='card2col--text'>{children}</div>
                 
-                <div className="card2col-vermas">
+                {/* <div className="card2col-vermas">
                     <ButtonVerMas />
-                </div>
+                </div> */}
             </div>
 
 

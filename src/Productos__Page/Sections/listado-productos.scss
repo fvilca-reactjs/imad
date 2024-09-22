@@ -1,0 +1,51 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+
+.container-listado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: transparent;    
+    // border: 2px solid yellowgreen;
+
+    .title-listado {
+        color: $color_azul;
+        @include jost-regular;
+        font-size: 22px;
+        text-align: center;
+        // margin-bottom: 1rem;
+    }
+    .nro-images{
+        color: $color_azul;
+        @include jost-regular;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .image-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // background-color: #dedede;
+
+        img {
+            border: .5px solid rgba($color_azul, 0.2);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            // background-color: #eeeeee;
+            mix-blend-mode: multiply;
+            transition: all 0.3s;
+        }
+
+        img:hover {
+            // transform: scale(1.05);
+            object-position: 50%;
+            border: 5px solid rgba($color_azul, 1);
+        }
+    }
+
+}

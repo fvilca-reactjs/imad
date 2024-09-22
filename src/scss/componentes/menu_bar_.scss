@@ -4,13 +4,18 @@
 
 @media (min-width: 1060px) {
 
-  //desktop
   #menu-bar {
     margin-top: 1rem;
-    width: 100vw;
+    padding: 0;
 
     .logo-container {
-      margin-left: 6rem;
+      width: 50%;
+      height: 80px;
+
+      .logo {
+        margin-left: $margin_left_general;
+      }
+
       .slogan {
         display: inline;
         padding: 1rem;
@@ -19,45 +24,52 @@
           border-left: 1px solid rgba($color: #fff, $alpha: 0.4);
           padding: 0 1rem;
           @include raleway-regular;
-          font-size: 14px;
+          font-size: 15px;
           white-space: nowrap;
         }
       }
     }
 
-
-
     .links {
-      width: auto;
+      background-color: $color_azul;
+      width: 50%;
       display: flex;
       justify-content: end;
       align-items: center;
       border-bottom: 1px solid rgba($color_rojo, $alpha: 0.5);
+
     }
 
     a {
-      padding: 1rem 0;
-      font-size: 16px;
+      cursor: pointer;
       font-weight: normal;
       font-family: $font_paragraph;
-      // flex-direction: column;
+      transition: color 1s;
       white-space: nowrap;
       align-items: center;
-      // mix-blend-mode: difference;
+      text-decoration: none;
+      margin-right: 3rem;
       text-shadow: -1px 1px 5px rgba(26, 26, 26, 0.5);
-      &:hover{
-        color: $color_rojo;
+
+      span {
+        font-size: 16px;
         transition: all 0.5s;
-      }  
-    }
-    
-    a.active{
-      color: $color_rojo;
+      }
+
+      &:hover {        
+        span {
+          color: $color_rojo;
+          transition: all 0.5s;
+        }
+      }
     }
 
-    .current {
-      // mix-blend-mode: difference;
-      // border: 1px solid red;
+    a.active {
+      
+      span{
+        transition: all 0.5s;
+        color: $color_rojo;
+      }
     }
 
 

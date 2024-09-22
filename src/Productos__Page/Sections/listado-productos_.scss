@@ -1,0 +1,33 @@
+@import '../../scss/typography.scss';
+@import '../../scss/base/variables.scss';
+// @import '../../scss/componentes/titulos_.scss';
+
+@media (min-width: 1060px) {
+
+    .container-listado {
+
+
+        .title-listado {
+            color: $color_azul;
+            @include jost-regular;
+            font-size: 30px;
+            text-align: center;
+        }
+        .nro-images{
+            color: $color_azul;
+            @include jost-regular;
+            font-size: 16px;
+         
+        }
+
+        .image-list {
+
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+    }
+}

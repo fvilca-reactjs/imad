@@ -1,0 +1,66 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+.card-container--producto {
+
+    background-color: #fff;
+    width: 100px;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+
+    .producto-card--title {
+        text-align: center;
+        padding: 0.4rem;
+        font-size: 12px;
+        @include raleway-bold;
+        color: $color_azul;
+        overflow: hidden;
+    }
+    .square{
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 30px;
+        height: 3px;
+        background-color: $color_rojo;
+    }
+
+    .producto-card--image {
+        // width: 100%;
+        height: 75px;
+        background-color: #dedede;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 200%;
+    }
+
+    .vermas-container {
+        position: relative;
+        padding: .3rem;
+        transition: all 0.3s;
+        color: $color_rojo;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+}
+
+.card-container--producto:hover {
+    transform: scale(1.15);
+    .vermas-container {
+        // background-color: $color_azul;
+    }
+}
+
+.card-container--producto:active {
+    position: relative;
+    top: 1px;
+}

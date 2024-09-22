@@ -9,7 +9,7 @@ export default function CounterSection({number, name}) {
       <div id="container-counter">
         <div className="container-number">
             <div>0{number}</div>
-            <span>/ 04 </span>
+            <span>/ 03 </span>
         </div>
         <div className="vertical"></div>
         <div className="container-name">{name}</div>

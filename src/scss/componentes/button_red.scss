@@ -1,0 +1,58 @@
+@import '../typography.scss';
+@import '../base/variables.scss';
+
+
+.rbutton-main {
+    
+  border: 0.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  background-color: $color_rojo;
+  color: white;
+  letter-spacing: 3px;
+  padding: 12px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  width: max-content;
+  display: inline-block;
+  text-align: center;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  white-space: nowrap;
+}
+
+.rbutton-main:hover {
+  background-color: rgba($color_rojo, .7);
+}
+
+.rbutton-main:active {
+  position: relative;
+  top: 1px;
+}
+
+
+.menu-rbutton {
+
+  z-index: 100;
+  transition: all .3s;
+
+  &:hover {
+    // border: 1px solid white;
+  }
+}
+
+
+@media (min-width: 1060px) {
+  .rbutton-main {
+    min-width: 170px;
+  }
+
+
+  .menu-rbutton {
+    display: none;
+  }
+}

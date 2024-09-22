@@ -4,16 +4,14 @@ import "../scss/componentes/menu_bar.scss";
 import "../scss/componentes/menu_bar_.scss";
 import logo from '../images/logo.svg'
 import { useLocation } from "react-router-dom";
-
 import { useState } from "react";
 import { animated as a, useTransition, config } from "@react-spring/web";
 import MenuButton from "./MenuButton";
-
+import { RedButton } from "./BlackButton";
 
 
 export default function MenuBar() {
   let location = useLocation().pathname;
-  // console.log('location-:', location.pathname);
 
   const [menuActive, setMenuActive] = useState(false);
   const transitions = useTransition(menuActive, {
@@ -27,11 +25,14 @@ export default function MenuBar() {
     setMenuActive(!menuActive)
   }
 
+
   const ishome = (location === '/imad/' || location === '/imad')
-  console.log('location:', location);
 
   const style_bg = {
     backgroundColor: ishome ? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 0.6)"
+  }
+  const style_bg_links = {
+    backgroundColor: ishome ? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 1)"
   }
   ////////////////////////////////////////////////
   return (
@@ -39,7 +40,7 @@ export default function MenuBar() {
 
       <div className="logo-container">
         <div className="logo">
-          <img src={logo} alt="logo" width={200} />
+          <img src={logo} alt="logo" width={150} />
         </div>
 
         <div className="slogan">
@@ -74,28 +75,33 @@ export default function MenuBar() {
                 <h1>Productos</h1>
               </NavLink>
 
+              <RedButton button_title='BROCHURE' />
+
+
             </a.div>
           )
       )}
 
-      <div className="links">
-        <NavLink className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
-        } to="/imad">
-          Inicio
+      <div className="links" style={style_bg_links}>
+        <NavLink
+          to="/imad">
+          <span>Inicio</span>
         </NavLink>
 
         <NavLink to="/manufactura">
-          Manufactura
+          <span>Manufactura</span>
         </NavLink>
 
         <NavLink to="/ingenieria">
-          Ingenieria
+          <span>Ingenieria</span>
         </NavLink>
 
         <NavLink to="/productos">
-          Productos
+          <span>Productos</span>
         </NavLink>
+
+        <RedButton button_title='BROCHURE' />
+
       </div>
 
     </nav>
