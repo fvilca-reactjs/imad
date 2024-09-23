@@ -25,8 +25,8 @@ export default function MenuBar() {
     setMenuActive(!menuActive)
   }
 
-
-  const ishome = (location === '/imad/' || location === '/imad')
+  // const ishome = (location === '/imad/' || location === '/imad')
+  const ishome = (location === '/')
 
   const style_bg = {
     backgroundColor: ishome ? "rgba( 70, 94, 110, 0)" : "rgba( 70, 94, 110, 0.6)"
@@ -59,7 +59,7 @@ export default function MenuBar() {
 
               <h1 className="menu-text">Menu</h1>
 
-              <NavLink end activeClassName="current" to="/imad" onClick={() => (setMenuActive(false))}>
+              <NavLink end activeClassName="current" to="/" onClick={() => (setMenuActive(false))}>
                 <h1>  Inicio </h1>
               </NavLink>
 
@@ -84,7 +84,7 @@ export default function MenuBar() {
 
       <div className="links" style={style_bg_links}>
         <NavLink
-          to="/imad">
+          to="/">
           <span>Inicio</span>
         </NavLink>
 
