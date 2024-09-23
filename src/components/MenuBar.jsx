@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../scss/componentes/menu_bar.scss";
 import "../scss/componentes/menu_bar_.scss";
 import logo from '../images/logo.svg'
+import logoBlack from '../images/logo-black.svg'
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { animated as a, useTransition, config } from "@react-spring/web";
@@ -40,7 +41,7 @@ export default function MenuBar() {
 
       <div className="logo-container">
         <div className="logo">
-          <img src={logo} alt="logo" width={150} />
+          <img src={(ishome)?logo:logoBlack} alt="logo" width={150} />
         </div>
 
         <div className="slogan">
