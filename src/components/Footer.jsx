@@ -32,9 +32,9 @@ export default function Footer() {
 
             <div className="horario-footer">
                 <h1>Horario de Trabajo</h1>
-                <p>Lunes - Viernes . . . . . . . . . . . . 8:00 am -  7:00 pm</p>
-                <p>Sabado . . . . . . . . . . . . . . . . . . 8:00 am -  7:00 pm</p>
-                <p>Domingo . .  . . . . . . . . . . . . . . . Cerrado</p>
+                <p>Lunes - Viernes . . . . . . . . . . . 7:00 am -  4:30 pm</p>
+                <p>Sabado . . . . . . . . . . . . . . . . . 7:00 am -  12:30 pm</p>
+                <p>Domingo . .  . . . . . . . . . . . . . . Cerrado</p>
             </div>{/**************************************** */}
 
         </div>

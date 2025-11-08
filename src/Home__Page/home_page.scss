@@ -81,11 +81,18 @@ y cada componente ya tiene caracteristicas de vsuales
     font-size: 13px;
     color: gray;
     text-align: center;
-
+    
     span {
       @include raleway-bold;
       font-size: 12px;
       color: $color_rojo;
+    }
+    a{
+      @include raleway-bold;
+      font-size: 12px;
+      color: $color_rojo;
+      text-decoration: none;
+      cursor: pointer;
     }
 
   }

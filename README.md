@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+###Deploy on plesk server
+1. build command and copy folder content build to  httpdocs folder on plesk
+2. create a file: .httaccess 
+3. read  
+https://ayuda.sitioshispanos.com/menu-principal/guias/paneles-de-control/panel-de-control-plesk/instalar-wordpress-y-reactcs/como-subir-mi-aplicacion-reactjs-a-mi-cuenta-de-hosting
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**

@@ -71,7 +71,7 @@ function HomePage() {
       <a.section id="section--footer" ref={ref_foot} style={{opacity: isFoot_inView ? 1 : 0, transition: "1s ease-in-out",}}>
         <Footer/>
         <div className="copyright">
-          Copyright © 2024 <span>IMAD</span> Ingenieria Manufactura Digital 3D y servicios S.A.C. Diseñado por<span> @Fil</span>
+          Copyright © 2024 <span>IMAD</span> Ingenieria Manufactura Digital 3D y servicios S.A.C. Diseñado por <a href="mailto:fvilca@gmail.com">@Fil</a> 
         </div>
       </a.section>
     </div>

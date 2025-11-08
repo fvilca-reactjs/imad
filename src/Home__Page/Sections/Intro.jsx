@@ -3,7 +3,6 @@ import "./intro.scss";
 import "./intro_.scss";
 import Button from "../../components/Button";
 import Whatsapp from '../../images/whatsapp_2.png'
-import Email from '../../images/message.png'
 import Call from '../../images/call.png'
 import Estadistica from "../../components/Estadistica";
 import { useInView, animated as a } from "@react-spring/web";
