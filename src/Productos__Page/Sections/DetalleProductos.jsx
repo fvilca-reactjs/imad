@@ -27,7 +27,7 @@ export default function DetalleProductos({ category }) {
                 )}
             </div>
             <div className="box2">
-                <Form title={product_images[category][id].name} link={'http://localhost:3000/productos/' + category + '/' + id} />
+                <Form title={product_images[category][id].name} link={window.location.origin + '/productos/' + category + '/' + id} />
             </div>
 
         </div>
