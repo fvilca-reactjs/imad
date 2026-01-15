@@ -74,3 +74,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### plesk
+1. cambiar en package.json    
+"homepage": "https://imad.com.pe", por
+  "homepage": "/",
+2. npm run build
+3. zipear solo el contenido de build
+4. subirlo a plesk,
+
+
+
