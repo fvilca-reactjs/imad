@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../scss/componentes/form.scss'
 import { BlackButton } from './BlackButton';
 import emailjs from '@emailjs/browser'
+import { Link } from 'react-router-dom';
 
 function Input({ name, type, placeholder }) {
     return (
@@ -24,14 +25,14 @@ function Input({ name, type, placeholder }) {
     );
 }
 
-export default function Form({ title, link="" }) {
+export default function Form({ title, link }) {
     const templateId = 'template_guboa8a'
     const serviceId = 'service_m9d8uou'
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState((!link)?'Hola deseo información: ':'Hola deseo información sobre: '+title );
+    const [message, setMessage] = useState((!link)?'Hola, deseo información: ':'Hola, deseo información sobre: '+title );
 
 
     const sendEmail = (e) => {
@@ -85,7 +86,7 @@ export default function Form({ title, link="" }) {
             </div>
 
             <div className="form-group">
-                <textarea className="mensaje-textarea" placeholder="" required rows={4} autoCorrect='none' autoComplete='none' spellCheck='false' onChange={(e) => setMessage(e.target.value)} value={message}>Hola, deseo informacion sobre: {link}</textarea>
+                <textarea className="mensaje-textarea" placeholder="" required rows={4} autoCorrect='none' autoComplete='none' spellCheck='false' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                 <span className="input-border"></span>
             </div>
 

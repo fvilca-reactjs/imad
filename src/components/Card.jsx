@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonVerMas from './ButtonVerMas'
 import '../scss/componentes/card.scss'
 
-export default function Card({ icon, title, children }) {
+export default function Card({ icon, title, children, onClick }) {
   return (
     <div className='card-container'>
       <img className='icon-card' src={icon} alt='icon'></img>
@@ -10,7 +10,7 @@ export default function Card({ icon, title, children }) {
       <div className='card-text'>{children}</div>
       <div className="space"></div>
       <div className="vermas-container">
-        <ButtonVerMas />
+        <ButtonVerMas click={onClick}/>
       </div>
 
     </div>
